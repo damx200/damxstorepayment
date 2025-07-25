@@ -116,7 +116,7 @@
     </div>
     <h2>𝗗𝗨𝗜𝗧𝗡𝗢𝗪</h2>
     <div class="subtext">ᴇ-ᴡᴀʟʟᴇᴛ</div>
-    <p id="duitnow-num">120331861205!</p>
+    <p id="duitnow-num">120331861205</p>
     <button class="btn" onclick="copyText('duitnow-num')">𝗦𝗔𝗟𝗜𝗡 𝗡𝗢𝗠𝗢𝗥</button>
   </div>
 
@@ -139,8 +139,8 @@
     function copyText(id) {
       const element = document.getElementById(id);
       const text = element.innerText.trim();
-      if (text === "120331861205!" || text === "120331861205") {
-        alert("120331861205.");
+      if (text === "") {
+        alert("Nomor belum tersedia.");
         return;
       }
       navigator.clipboard.writeText(text);
